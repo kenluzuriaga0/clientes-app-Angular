@@ -1,11 +1,11 @@
-# ClientesApp
+# clientes-app-Angular
 
 Proyecto de Angular. Parte Frontend
 
 La Parte backend está hecha en Spring boot
 
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`.
 
 
 Instalar libreria de alertas

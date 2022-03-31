@@ -1,0 +1,34 @@
+<div class="my-2 text-left">
+    <button class="btn btn-rounded btn-info" type="button" [routerLink]="['/clientes/form']">Crear Cliente</button>
+</div>
+<div class="container">
+<div *ngIf="clientes?.length==0">
+    <div class="alert alert-info">No hay registros</div>
+</div>
+    <table class="table table-bordered" *ngIf="clientes?.length>0" > <!--el ? verifica si es null primero-->
+        <thead class="table-dark">
+            <tr>
+                <th>id</th>
+                <th>nombre</th>
+                <th>apellido</th>
+                <th>email</th>
+                <th>fecha</th>
+                <th>Editar</th>
+                <th>Eliminar</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let cli of clientes">
+                <td>{{cli.id}}</td>
+                <td>{{cli.nombre}}</td>
+                <td>{{cli.apellido}}</td>
+                <td>{{cli.email}}</td>
+                <td>{{cli.createAt}}</td>
+                <td><button type="button" name="button" [routerLink]="['/clientes/form',cli.id]" class="btn btn-primary">editar</button></td>
+                <td><button type="button" name="button" (click)="delete(cli)" class="btn btn-danger">eliminar</button></td>
+
+            </tr>
+        </tbody>
+    </table>
+</div>

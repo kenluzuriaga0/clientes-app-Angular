@@ -9,4 +9,4 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`.
 
 
 Instalar libreria de alertas
-## npm install sweetalert2 --save
+`npm install sweetalert2 --save`
